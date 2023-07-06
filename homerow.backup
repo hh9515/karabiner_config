@@ -1,0 +1,16 @@
+{
+                        "description": "| to Home_row",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "backslash"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f17"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
