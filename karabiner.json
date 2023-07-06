@@ -32,7 +32,7 @@
                                 ],
                                 "from": {
                                     "key_code": "9",
-                                    "modifiers": {
+                                        "modifiers": {
                                         "mandatory": [
                                             "left_control"
                                         ]
@@ -46,14 +46,6 @@
                                         "shell_command": "open -a 'ChatGPT.app'"
                                     }
                                 ],
-                                "to_delayed_action": {
-                                    "to_if_canceled": [],
-                                    "to_if_invoked": [
-                                        {
-                                            "key_code": "tab"
-                                        }
-                                    ]
-                                },
                                 "type": "basic"
                             },
                             {
