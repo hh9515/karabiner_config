@@ -501,8 +501,46 @@
                         ]
                     },
                     {
-                        "description": "map cmd+1 cmd+2 cmd+3 cmd+4  to    if not Chrome open chrome, else openVscode,     Chrome , Vscode ,iTerm",
+                        "description": "这个设置把右边键盘控制的破坏了] map keypad_4(Home in niz micro 84 keyboard)  cmd+1 cmd+2 cmd+3 cmd+4  to    if not Chrome open chrome, else openVscode,     Chrome , Vscode ,iTerm ",
                         "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com.google.Chrome|org.chromium.Chromium$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "keypad_4"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Google Chrome.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com.google.Chrome|org.chromium.Chromium$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "keypad_4"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Visual Studio Code.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
                             {
                                 "conditions": [
                                     {
