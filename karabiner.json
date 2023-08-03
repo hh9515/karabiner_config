@@ -235,6 +235,27 @@
                         ]
                     },
                     {
+                        "description": "option + blackslash to clear notifcation",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "backslash",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "~/.config/karabiner/etc/clearNotificationVentura.sh"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Change l_command+r_command to open music",
                         "manipulators": [
                             {
