@@ -1,4 +1,11 @@
 # !/bin/bash
+###
+ # @file: description
+ # @author: huhao03
+ # @Date: 2023-08-03 20:39:39
+ # @LastEditors: huhao03
+ # @LastEditTime: 2023-08-04 09:52:13
+### 
 # osascript -e 'tell application "System Events" to tell process "NotificationCenter"' -e 'try' -e 'click last item of windows' -e 'on error' -e 'do shell script "open -a Lark.app"' -e 'end try' -e 'end tell' 
 
 osascript -e 'tell application "System Events"
