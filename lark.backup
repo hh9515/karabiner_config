@@ -32,8 +32,7 @@
                                 "type": "basic"
                             }
                         ]
-}
-
+},
 {
                         "description": "in Lark,backslashx2 to press escape ,then hide Lark.app, ] to open next unread message,[ to open previous unread message",
                         "manipulators": [
@@ -153,9 +152,7 @@
                                 "type": "basic"
                             }
                         ]
-}
-
-
+},
 {
                         "description": "in Lark,tab to  focus on input",
                         "manipulators": [
