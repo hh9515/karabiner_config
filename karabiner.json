@@ -19,6 +19,55 @@
                 },
                 "rules": [
                     {
+                            "description": "Execute scripts with specific key combination",
+                            "manipulators": [
+                              {
+                                "type": "basic",
+                                "from": {
+                                  "key_code": "hyphen",
+                                  "modifiers": {
+                                    "mandatory": [
+                                      "fn",
+                                      "control",
+                                      "shift",
+                                      "command"
+                                    ],
+                                    "optional": [
+                                      "any"
+                                    ]
+                                  }
+                                },
+                                "to": [
+                                  {
+                                    "shell_command": "~/.config/karabiner/bosskey/kill.sh"
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "basic",
+                                "from": {
+                                  "key_code": "equal_sign",
+                                  "modifiers": {
+                                    "mandatory": [
+                                      "fn",
+                                      "control",
+                                      "shift",
+                                      "command"
+                                    ],
+                                    "optional": [
+                                      "any"
+                                    ]
+                                  }
+                                },
+                                "to": [
+                                  {
+                                    "shell_command": "~/.config/karabiner/bosskey/start.sh"
+                                  }
+                                ]
+                              }
+                            ]
+                      }
+                    ,{
                         "description": "Map Command + D to Show Desktop",
                         "manipulators": [
                             {
