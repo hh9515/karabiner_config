@@ -67,30 +67,7 @@
                               }
                             ]
                       }
-                    ,{
-                        "description": "Map Command + D to Show Desktop",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f11"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
+                    ,
                     {
                         "description": "ctrl+8 to open poe",
                         "manipulators": [
