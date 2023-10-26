@@ -850,9 +850,9 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "tab",
+                                        "key_code": "h",
                                         "modifiers": [
-                                            "option"
+                                            "command"
                                         ]
                                     }
                                 ],
@@ -901,9 +901,9 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "tab",
+                                        "key_code": "h",
                                         "modifiers": [
-                                            "option"
+                                            "command"
                                         ]
                                     }
                                 ],
@@ -4624,20 +4624,6 @@
                             ]
                         }
                     ],
-                    "treat_as_built_in_keyboard": false
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "product_id": 0,
-                        "vendor_id": 2007
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": true,
-                    "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
                 }
             ],

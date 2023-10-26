@@ -19,54 +19,55 @@
                 },
                 "rules": [
                     {
-                        "description": "Execute scripts with specific key combination",
-                        "manipulators": [
-                            {
+                            "description": "Execute scripts with specific key combination",
+                            "manipulators": [
+                              {
+                                "type": "basic",
                                 "from": {
-                                    "key_code": "hyphen",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn",
-                                            "control",
-                                            "shift",
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
+                                  "key_code": "hyphen",
+                                  "modifiers": {
+                                    "mandatory": [
+                                      "fn",
+                                      "control",
+                                      "shift",
+                                      "command"
+                                    ],
+                                    "optional": [
+                                      "any"
+                                    ]
+                                  }
                                 },
                                 "to": [
-                                    {
-                                        "shell_command": "~/.config/karabiner/bosskey/kill.sh"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
+                                  {
+                                    "shell_command": "~/.config/karabiner/bosskey/kill.sh"
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "basic",
                                 "from": {
-                                    "key_code": "equal_sign",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn",
-                                            "control",
-                                            "shift",
-                                            "command"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
+                                  "key_code": "equal_sign",
+                                  "modifiers": {
+                                    "mandatory": [
+                                      "fn",
+                                      "control",
+                                      "shift",
+                                      "command"
+                                    ],
+                                    "optional": [
+                                      "any"
+                                    ]
+                                  }
                                 },
                                 "to": [
-                                    {
-                                        "shell_command": "~/.config/karabiner/bosskey/start.sh"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
+                                  {
+                                    "shell_command": "~/.config/karabiner/bosskey/start.sh"
+                                  }
+                                ]
+                              }
+                            ]
+                      }
+                    ,
                     {
                         "description": "ctrl+8 to open poe",
                         "manipulators": [
@@ -168,8 +169,8 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
+            },
+            {
                         "description": "in Lark,backslashx2 to press escape ,then hide Lark.app, ] to open next unread message,[ to open previous unread message",
                         "manipulators": [
                             {
@@ -288,8 +289,8 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
+},
+{
                         "description": "in Lark,tab to  focus on input",
                         "manipulators": [
                             {
@@ -324,8 +325,8 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
+                },
+                {
                         "description": "option + k to command+k （in）  Lark.app",
                         "manipulators": [
                             {
@@ -356,7 +357,7 @@
                                 "type": "basic"
                             }
                         ]
-                    },
+},
                     {
                         "description": "option + blackslash to clear notifcation",
                         "manipulators": [
@@ -850,9 +851,9 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "tab",
+                                        "key_code": "h",
                                         "modifiers": [
-                                            "option"
+                                            "command"
                                         ]
                                     }
                                 ],
@@ -901,9 +902,9 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "tab",
+                                        "key_code": "h",
                                         "modifiers": [
-                                            "option"
+                                            "command"
                                         ]
                                     }
                                 ],
@@ -4590,55 +4591,6 @@
                     "manipulate_caps_lock_led": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": true,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "product_id": 20565,
-                        "vendor_id": 12815
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": false,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "apple_vendor_top_case_key_code": "keyboard_fn"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "right_command"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_control"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "right_command"
-                                }
-                            ]
-                        }
-                    ],
-                    "treat_as_built_in_keyboard": false
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "product_id": 0,
-                        "vendor_id": 2007
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": true,
-                    "simple_modifications": [],
-                    "treat_as_built_in_keyboard": false
                 }
             ],
             "fn_function_keys": [
@@ -4648,7 +4600,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "f1"
+                            "consumer_key_code": "display_brightness_decrement"
                         }
                     ]
                 },
@@ -4658,7 +4610,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "f2"
+                            "consumer_key_code": "display_brightness_increment"
                         }
                     ]
                 },
@@ -4668,7 +4620,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "f3"
+                            "apple_vendor_keyboard_key_code": "mission_control"
                         }
                     ]
                 },
