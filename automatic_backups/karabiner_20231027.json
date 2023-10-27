@@ -4751,7 +4751,7 @@
                     },
                     "to": [
                         {
-                            "consumer_key_code": "volume_decrement"
+                            "consumer_key_code": "scan_previous_track"
                         }
                     ]
                 },
@@ -4761,7 +4761,7 @@
                     },
                     "to": [
                         {
-                            "consumer_key_code": "volume_increment"
+                            "consumer_key_code": "scan_next_track"
                         }
                     ]
                 }
