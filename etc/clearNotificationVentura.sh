@@ -4,7 +4,7 @@
  # @author: huhao03
  # @Date: 2023-08-03 20:50:55
  # @LastEditors: huhao03
- # @LastEditTime: 2023-08-03 20:51:52
+ # @LastEditTime: 2023-10-31 17:43:01
 ### 
 osascript -e 'tell application "System Events"
 	try
