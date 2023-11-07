@@ -54,7 +54,7 @@
             ]
           },
           {
-            "description": "ctrl+8 to open poe .",
+            "description": "ctrl+8 to open poe . ",
             "manipulators": [
               {
                 "conditions": [
