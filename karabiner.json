@@ -2935,7 +2935,6 @@
                 "type": "basic"
               },
               {
-                "description": "不是chrome，不是Chromium情况下，如果不是中文就直接触发cmd+t",
                 "conditions": [
                   {
                     "bundle_identifiers": [
@@ -3179,35 +3178,6 @@
                 "to": [
                   {
                     "key_code": "home"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Change caps_lock to right_shift in finder and vscode (alone to f18)",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "bundle_identifiers": [
-                      "^com.apple.finder|com.microsoft.VSCode$"
-                    ],
-                    "type": "frontmost_application_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "caps_lock"
-                },
-                "to": [
-                  {
-                    "key_code": "right_shift"
-                  }
-                ],
-                "to_if_alone": [
-                  {
-                    "key_code": "f18"
                   }
                 ],
                 "type": "basic"
