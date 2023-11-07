@@ -54,7 +54,7 @@
             ]
           },
           {
-            "description": "ctrl+8 to open poe . ",
+            "description": "ctrl+8 to open poe . .",
             "manipulators": [
               {
                 "conditions": [
@@ -2973,7 +2973,7 @@
             ]
           },
           {
-            "description": "l_option + backslash to backslash",
+            "description": "l_option + backslash to backslash.",
             "manipulators": [
               {
                 "from": {
