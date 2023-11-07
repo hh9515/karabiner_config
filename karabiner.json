@@ -2935,7 +2935,7 @@
                 "type": "basic"
               },
               {
-                "description": "如果不是中文就直接触发cmd+t",
+                "description": "不是chrome，不是Chromium情况下，如果不是中文就直接触发cmd+t",
                 "conditions": [
                   {
                     "bundle_identifiers": [
@@ -2974,7 +2974,7 @@
             ]
           },
           {
-            "description": "capslockAlone to esc when not in ",
+            "description": "capslock映射到esc，如果不是finder和vscode ",
             "manipulators": [
               {
                 "conditions": [
