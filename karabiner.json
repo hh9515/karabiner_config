@@ -2893,7 +2893,7 @@
             ]
           },
           {
-            "description": "如果是中文输入法，并且在chrome和chromium，capslock映射到cmd+t",
+            "description": "如果是中文输入法，并且在chrome和chromium，capslock映射到cmd+t。",
             "manipulators": [
               {
                 "conditions": [
