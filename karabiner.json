@@ -2935,6 +2935,7 @@
                 "type": "basic"
               },
               {
+                "description": "如果不是中文就直接触发cmd+t",
                 "conditions": [
                   {
                     "bundle_identifiers": [
