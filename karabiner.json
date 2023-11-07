@@ -19,7 +19,7 @@
         },
         "rules": [
           {
-            "description": "Execute scripts with specific key combination",
+            "description": "Execute scripts with specific key combination.",
             "manipulators": [
               {
                 "from": {
@@ -54,7 +54,7 @@
             ]
           },
           {
-            "description": "ctrl+8 to open poe",
+            "description": "ctrl+8 to open poe .",
             "manipulators": [
               {
                 "conditions": [
