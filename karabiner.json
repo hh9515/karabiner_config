@@ -111,7 +111,7 @@
             ]
           },
           {
-            "description": "backslash to open Lark.app",
+            "description": "backslash to open Lark.app.",
             "manipulators": [
               {
                 "conditions": [
