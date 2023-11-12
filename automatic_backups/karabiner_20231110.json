@@ -57,6 +57,7 @@
             "description": "暂停/播放（ctrl + command + m）",
             "manipulators": [
               {
+                "type": "basic",
                 "from": {
                   "key_code": "m",
                   "modifiers": {
@@ -67,8 +68,7 @@
                   {
                     "key_code": "play_or_pause"
                   }
-                ],
-                "type": "basic"
+                ]
               }
             ]
           },
@@ -2886,7 +2886,7 @@
             ]
           },
           {
-            "description": "如果不是chrome和chromium，capslock映射到打开Chrome，否则是command+t",
+            "description": "如果不是chrome和chromium，capslock映射到打开Chrome",
             "manipulators": [
               {
                 "conditions": [
@@ -2912,6 +2912,11 @@
                   "basic.to_if_alone_timeout_milliseconds": 160
                 },
                 "to": [
+                  {
+                    "key_code": "right_shift"
+                  }
+                ],
+                "to_if_alone": [
                   {
                     "key_code": "t",
                     "modifiers": ["command"]
@@ -2942,7 +2947,15 @@
                 "from": {
                   "key_code": "caps_lock"
                 },
+                "parameters": {
+                  "basic.to_if_alone_timeout_milliseconds": 160
+                },
                 "to": [
+                  {
+                    "key_code": "right_shift"
+                  }
+                ],
+                "to_if_alone": [
                   {
                     "shell_command": "open -a 'Google Chrome.app'"
                   }
