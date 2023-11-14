@@ -73,6 +73,44 @@
             ]
           },
           {
+            "description": "下一曲 ctrl + command + .(>)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "period",
+                  "modifiers": {
+                    "mandatory": ["control", "command"]
+                  }
+                },
+                "to": [
+                  {
+                    "consumer_key_code": "scan_next_track"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "上一曲 ctrl + command + ,(<)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "comma",
+                  "modifiers": {
+                    "mandatory": ["control", "command"]
+                  }
+                },
+                "to": [
+                  {
+                    "consumer_key_code": "scan_previous_track"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "ctrl+8 to open poe . . ",
             "manipulators": [
               {
