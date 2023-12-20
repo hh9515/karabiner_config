@@ -346,12 +346,6 @@
             "description": "Change l_command+r_command to update shadowrocket",
             "manipulators": [
               {
-                "conditions": [
-                  {
-                    "bundle_identifiers": ["^com.liguangming.Shadowrocket$"],
-                    "type": "frontmost_application_unless"
-                  }
-                ],
                 "from": {
                   "key_code": "right_command",
                   "modifiers": {
@@ -361,6 +355,20 @@
                 "to": [
                   {
                     "shell_command": "shortcuts run 'updatesssub'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "right_command",
+                  "modifiers": {
+                    "mandatory": ["left_command", "left_shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "shortcuts run 'toggleshadowrocket'"
                   }
                 ],
                 "type": "basic"
