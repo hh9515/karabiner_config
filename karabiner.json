@@ -324,7 +324,7 @@
             ]
           },
           {
-            "description": "option + blackslash to clear notifcation",
+            "description": "option + blackslash to backslash",
             "manipulators": [
               {
                 "from": {
@@ -335,7 +335,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "~/.config/karabiner/etc/clearNotificationVentura.sh"
+                    "key_code": "backslash"
                   }
                 ],
                 "type": "basic"
