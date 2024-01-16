@@ -174,7 +174,11 @@
                 },
                 "to": [
                   {
-                    "shell_command": "~/.config/karabiner/etc/click.sh"
+                    "shell_command": "open -a 'Lark.app'"
+                  },
+                  {
+                    "key_code": "down_arrow",
+                    "modifiers": ["left_shift", "left_command"]
                   }
                 ],
                 "to_if_held_down": [
