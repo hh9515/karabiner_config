@@ -4,7 +4,7 @@
 //         {
 //             "conditions": [
 //                 {
-//                     "bundle_identifiers": [
+//                     "bundle_identifiers": [a
 //                         "^com.apple.finder|com.microsoft.VSCode$"
 //                     ],
 //                     "type": "frontmost_application_if"
