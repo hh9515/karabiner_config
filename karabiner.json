@@ -390,7 +390,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "open -a 'Shadowrocket.app' && shortcuts run 'updatesssub'"
+                    "shell_command": "shortcuts run 'updatesssub' && open -a 'Shadowrocket.app'"
                   }
                 ],
                 "type": "basic"
