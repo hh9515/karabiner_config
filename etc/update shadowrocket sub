@@ -1,0 +1,91 @@
+{
+  "description": "Change l_command+r_command to toggle shadowrocket,shift+lcmd+rcmd to update subscription",
+  "manipulators": [
+    {
+      "conditions": [
+        {
+          "bundle_identifiers": [
+            "^com.liguangming.Shadowrocket$"
+          ],
+          "type": "frontmost_application_unless"
+        }
+      ],
+      "from": {
+        "key_code": "right_command",
+        "modifiers": {
+          "mandatory": [
+            "left_command"
+          ]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "shortcuts run 'updatesssub' && open -a 'Shadowrocket.app'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "conditions": [
+        {
+          "bundle_identifiers": [
+            "^com.liguangming.Shadowrocket$"
+          ],
+          "type": "frontmost_application_if"
+        }
+      ],
+      "from": {
+        "key_code": "right_command",
+        "modifiers": {
+          "mandatory": [
+            "left_command"
+          ]
+        }
+      },
+      "to": [
+        {
+          "key_code": "h",
+          "modifiers": "command"
+        },
+        {
+          "shell_command": "shortcuts run 'updatesssub'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "right_command",
+        "modifiers": {
+          "mandatory": [
+            "left_command",
+            "left_shift"
+          ]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "shortcuts run 'toggleshadowrocket'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "right_command",
+        "modifiers": {
+          "mandatory": [
+            "left_command",
+            "left_shift"
+          ]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "shortcuts run 'toggleshadowrocket'"
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
