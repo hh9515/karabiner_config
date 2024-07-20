@@ -1051,7 +1051,7 @@
             ]
           },
           {
-            "description": "map numpad num_pad 7 8 to scroll up down",
+            "description": "map numpad num_pad 7 9 to scroll up down",
             "manipulators": [
               {
                 "from": {
@@ -1078,28 +1078,10 @@
                   }
                 ],
                 "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "map numpad num_pad 7 8 to scroll up down",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "keypad_7"
-                },
-                "to": [
-                  {
-                    "mouse_key": {
-                      "vertical_wheel": 32
-                    }
-                  }
-                ],
-                "type": "basic"
               },
               {
                 "from": {
-                  "key_code": "keypad_8"
+                  "key_code": "keypad_9"
                 },
                 "to": [
                   {
@@ -5431,7 +5413,7 @@
             ]
           },
           {
-            "description": "map numpad num_pad 7 8 to scroll up down",
+            "description": "map numpad num_pad 7 9 to scroll up down",
             "manipulators": [
               {
                 "from": {
@@ -5448,38 +5430,7 @@
               },
               {
                 "from": {
-                  "key_code": "keypad_8"
-                },
-                "to": [
-                  {
-                    "mouse_key": {
-                      "vertical_wheel": -32
-                    }
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "map numpad num_pad 7 8 to scroll up down",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "keypad_7"
-                },
-                "to": [
-                  {
-                    "mouse_key": {
-                      "vertical_wheel": 32
-                    }
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "keypad_8"
+                  "key_code": "keypad_9"
                 },
                 "to": [
                   {
