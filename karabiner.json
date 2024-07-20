@@ -152,6 +152,11 @@
                 "from": { "key_code": "keypad_plus" },
                 "to": [
                   {
+                    "pointing_button": "button3"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
                     "mouse_key": {
                       "speed_multiplier": 0.5
                     }
