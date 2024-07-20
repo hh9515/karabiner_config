@@ -125,6 +125,11 @@
                 "from": { "key_code": "keypad_0" },
                 "to": [
                   {
+                    "pointing_button": "button1"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
                     "mouse_key": {
                       "speed_multiplier": 3
                     }
