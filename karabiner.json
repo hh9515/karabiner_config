@@ -2409,7 +2409,11 @@
                     "key_code": "left_option"
                   }
                 ],
-                "type": "basic"
+                "type": "basic",
+                "parameters": {
+                  "basic.to_if_alone_timeout_milliseconds": 100,
+                  "basic.to_if_alone_threshold_milliseconds": 50
+                }
               }
             ]
           },
