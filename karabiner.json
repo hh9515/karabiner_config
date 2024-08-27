@@ -19,6 +19,35 @@
         },
         "rules": [
           {
+            "description": "Remap Command+I to Option+Command+I in Google Chrome and Chromium",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "i",
+                  "modifiers": {
+                    "mandatory": ["command"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "i",
+                    "modifiers": ["command", "option"]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                      "^com.google.Chrome|org.chromium.Chromium$"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "description": "map niz numpad",
             "manipulators": [
               {
