@@ -870,67 +870,6 @@
             ]
           },
           {
-            "description": "holl_control + slash 2s to switch between different switcher mode",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "name": "SWITCHER_WORKING_MODE",
-                    "type": "variable_if",
-                    "value": 1
-                  }
-                ],
-                "from": {
-                  "key_code": "slash",
-                  "modifiers": {
-                    "mandatory": ["left_control"]
-                  }
-                },
-                "parameters": {
-                  "basic.to_if_alone_timeout_milliseconds": 2000,
-                  "basic.to_if_held_down_threshold_milliseconds": 2000
-                },
-                "to_if_held_down": [
-                  {
-                    "set_variable": {
-                      "name": "SWITCHER_WORKING_MODE",
-                      "value": 0
-                    }
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "conditions": [
-                  {
-                    "name": "SWITCHER_WORKING_MODE",
-                    "type": "variable_unless",
-                    "value": 1
-                  }
-                ],
-                "from": {
-                  "key_code": "slash",
-                  "modifiers": {
-                    "mandatory": ["left_control"]
-                  }
-                },
-                "parameters": {
-                  "basic.to_if_alone_timeout_milliseconds": 2000,
-                  "basic.to_if_held_down_threshold_milliseconds": 2000
-                },
-                "to_if_held_down": [
-                  {
-                    "set_variable": {
-                      "name": "SWITCHER_WORKING_MODE",
-                      "value": 1
-                    }
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "这个设置把右边键盘控制的破坏了] map keypad_4(Home in niz micro 84 keyboard)  cmd+1 cmd+2 cmd+3 cmd+4  to    if not Chrome open chrome, else openVscode,     Chrome , Vscode ,iTerm ",
             "manipulators": [
               {
