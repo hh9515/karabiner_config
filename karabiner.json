@@ -1483,7 +1483,13 @@
                   {
                     "file_paths": ["/opt/homebrew/bin/scrcpy$"],
                     "type": "frontmost_application_unless"
-                  }
+                  },
+                  {
+                    "bundle_identifiers": [
+                        "^com.googlecode.iterm2$"
+                    ],
+                    "type": "frontmost_application_unless"
+                }
                 ],
                 "from": {
                   "key_code": "left_shift",
