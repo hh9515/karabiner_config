@@ -2392,8 +2392,8 @@
                 },
                 "type": "basic",
                 "parameters": {
-                  "basic.to_if_alone_timeout_milliseconds": 85,
-                  "basic.to_if_alone_threshold_milliseconds": 40
+                  "basic.to_if_alone_timeout_milliseconds": 185,
+                  "basic.to_if_alone_threshold_milliseconds": 140
                 }
               }
             ]
