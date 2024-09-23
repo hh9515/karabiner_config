@@ -19,7 +19,7 @@
         },
         "rules": [
           {
-            "description": "Remap shift+command+w to command+h in VSCode",
+            "description": "Remap shift+command+w to command+m in VSCode",
             "manipulators": [
               {
                 "conditions": [
@@ -36,7 +36,7 @@
                 },
                 "to": [
                   {
-                    "key_code": "h",
+                    "key_code": "m",
                     "modifiers": ["command"]
                   }
                 ],
