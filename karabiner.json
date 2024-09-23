@@ -19,34 +19,34 @@
         },
         "rules": [
           {
-            "description": "Remap command+q/w to command+h in Google Chrome Dev",
+            "description": "Remap shift+command+w to command+h in VSCode",
             "manipulators": [
               {
-                "description": "Remap shift+command+w to command+h in VSCode",
-                "manipulators": [
+                "conditions": [
                   {
-                    "conditions": [
-                      {
-                        "bundle_identifiers": ["^com\\.microsoft\\.VSCode$"],
-                        "type": "frontmost_application_if"
-                      }
-                    ],
-                    "from": {
-                      "key_code": "w",
-                      "modifiers": {
-                        "mandatory": ["shift", "command"]
-                      }
-                    },
-                    "to": [
-                      {
-                        "key_code": "h",
-                        "modifiers": ["command"]
-                      }
-                    ],
-                    "type": "basic"
+                    "bundle_identifiers": ["^com\\.microsoft\\.VSCode$"],
+                    "type": "frontmost_application_if"
                   }
-                ]
-              },
+                ],
+                "from": {
+                  "key_code": "w",
+                  "modifiers": {
+                    "mandatory": ["shift", "command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "h",
+                    "modifiers": ["command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Remap command+q/w to command+h in Google Chrome Dev",
+            "manipulators": [
               {
                 "conditions": [
                   {
