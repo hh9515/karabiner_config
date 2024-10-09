@@ -2507,7 +2507,8 @@
                 "type": "basic",
                 "parameters": {
                   "basic.to_if_alone_timeout_milliseconds": 185,
-                  "basic.to_if_alone_threshold_milliseconds": 140
+                  "basic.to_if_alone_threshold_milliseconds": 140,
+                  "basic.to_delayed_action_delay_milliseconds": 300
                 }
               }
             ]
